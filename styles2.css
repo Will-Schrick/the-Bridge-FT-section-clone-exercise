@@ -1,0 +1,174 @@
+:root {
+    --primary-color: #f33540;
+    --secondary-color: #ef3340;
+    --accent-color: #d83334;
+    --background-color: #fff;
+    --text-color-black: #000;
+    --text-color-white: #fff;
+  }
+  
+  * {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .logoleft {
+    flex: 1 1 200px;
+  }
+  
+  header,
+  ul,
+  a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    align-content: flex-end;
+    white-space: nowrap;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+  
+  }
+  
+  button {
+    background-color: #f33540;
+    border: none;
+    color: #fff;
+    white-space: nowrap;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 10px;
+  }
+  
+  
+  main section:nth-of-type(1) {
+    position: relative;
+    /* Make this section a positioning context for floating text */
+  }
+  
+  main section:nth-of-type(1) img {
+    width: 100%;
+    height: auto;
+  }
+  
+  main section:nth-of-type(1) h1 {
+  
+    position: absolute;
+    /* Position the text absolutely over the image */
+    top: 15%;
+    /* Center vertically */
+    left: 20px;
+    /* Align to the left */
+    color: white;
+    /* White text for contrast */
+    padding: 20px;
+    /* Add padding for readability */
+    max-width: 400px;
+    /* Optional: Limit the width of the text box */
+    flex-wrap: wrap;
+  }
+  
+  
+  .bootcamps-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+  }
+  
+   .card {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    border-radius: 15px;
+  }
+  
+  .card-text {
+    color: white;
+    margin-left: 12px;
+  }
+  
+
+  .first-card {
+    background-image: url('./img/estudiar-data-science-1.png');
+  }
+  
+  .second-card {
+    background-image: url('./img/estudiar-ciberseguridad.png');
+  }
+  
+  .third-card {
+    background-image: url('./img/estudiar-programacion-front-end-back.png');
+  }
+  
+  .fourth-card {
+    background-image: url('./img/estudiar-el-mejor-marketing-digital.png');
+  }
+  
+  .fifth-card {
+    background-image: url('./img/estudiar-el-mejor-marketing-digital.png');
+  }
+  
+ 
+
+
+
+  .info {
+    background-color: #f33540;
+  
+  }
+  
+  .info h2 {
+    color: white;
+    padding-top: 40px;
+    margin: 25px;
+  }
+  
+  .flex-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    flex: 1;
+    background-color: white;
+    margin: 25px;
+    border-radius: 10px;
+    padding: 20px;
+    height: auto:
+      /* -- this seemed to  work too.... height: fit-content;*/
+  
+  }
+  
+  .flex-info :hover {
+    animation: moveup 1s;
+    /*this is hard..... animation: name duration timing-function delay iteration-count direction fill-mode;*/
+  }
+  
+  @keyframes moveup {
+    0% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-5px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  
+  .item img {
+    flex-shrink: 3;
+    max-width: 110px;
+    width: auto;
+  }
