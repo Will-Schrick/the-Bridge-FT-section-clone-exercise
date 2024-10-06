@@ -42,8 +42,8 @@ header, ul,a {
 }
 
 main section:nth-of-type(1) img {
-    width: 100%;                  /* Make the image responsive */
-    height: auto;               /* Maintain the aspect ratio */
+    width: 100%;                /
+    height: auto;              
     }
   main section:nth-of-type(1) h1 {
 
@@ -124,8 +124,28 @@ justify-content: space-between;
   border-radius: 10px;
   padding: 20px;
   height: auto:
-  /*height: fit-content;*/
+  /* -- this seemed to  work too.... height: fit-content;*/
+  
 }
+
+.flex-info :hover {
+  animation: moveup 1s;
+  /*this is hard..... animation: name duration timing-function delay iteration-count direction fill-mode;*/
+}
+
+@keyframes moveup{
+  0% {
+    transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-5px); 
+      }
+      100% {
+        transform: translateY(0); 
+      }
+}
+
 
 .item img {
   flex-shrink: 3;
