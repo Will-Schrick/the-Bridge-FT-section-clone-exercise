@@ -146,7 +146,6 @@
     
   }
   
-
   .first-card {
     background-image: url('./img/estudiar-data-science-1.png');
    
@@ -164,6 +163,7 @@
     background-image: url('./img/bootcamp-cloud.png');
   }
   
+  /* user pic for cloud here that was provided instead..no UX/UI photo*/
   .fifth-card {
     background-image: url('./img/estudiar-el-mejor-marketing-digital.png');
   }
