@@ -51,6 +51,18 @@
     padding: 10px;
   }
   
+  .sticky {
+    position: sticky;
+    width: 30px;
+    height: auto px;
+    inset: 15px;
+    top:425px;
+    z-index: 1;
+    
+
+
+
+  } 
   
   main section:nth-of-type(1) {
     position: relative;
